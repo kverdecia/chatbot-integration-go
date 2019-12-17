@@ -13,7 +13,7 @@ main() {
     --name $container_name \
     --volume $local_workdir:$container_workdir \
     --workdir $container_workdir \
-    golang
+    golang:alpine
 }
 
 main
