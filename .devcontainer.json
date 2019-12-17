@@ -1,0 +1,12 @@
+{
+    "dockerFile": "Dockerfile",
+    "appPort": [
+        "8000:8000"
+    ],
+    "workspaceMount": "src=${localWorkspaceFolder},dst=/go/src/github.com/kverdecia/chatbot-integration-go,type=bind",
+    "workspaceFolder": "/go/src/github.com/kverdecia/chatbot-integration-go",
+    "postCreateCommand": "dep ensure",
+    "extensions": [
+        "ms-vscode.go"
+    ]
+}
