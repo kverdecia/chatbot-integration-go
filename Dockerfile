@@ -1,6 +1,7 @@
 FROM golang:alpine
 
 RUN apk update
+RUN apk add alpine-sdk
 RUN apk add git
 RUN go get -x -d github.com/stamblerre/gocode 2>&1
 RUN go build -o gocode-gomod github.com/stamblerre/gocode
